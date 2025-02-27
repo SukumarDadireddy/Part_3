@@ -1,0 +1,26 @@
+{
+  "name": "phonebook_backend",
+  "version": "1.0.0",
+  "description": "backend service to serve phonebook",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukumarDadireddy/Part_3.git"
+  },
+  "author": "sukumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukumarDadireddy/Part_3/issues"
+  },
+  "homepage": "https://github.com/SukumarDadireddy/Part_3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  }
+}
