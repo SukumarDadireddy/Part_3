@@ -2,6 +2,7 @@ const express = require('express')
 const process =require('process')
 require('dotenv').config()
 const PhoneBook = require('./models/Phone')
+const claudeRouter = require('./routes/claude')
 var morgan = require('morgan')
 const cors = require('cors')
 const app = express()
@@ -17,6 +18,8 @@ morgan.token('req-body', (req) => {
   return '-'
 })
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :req-body'))
+
+app.use('/api/chat', claudeRouter)
 
 app.get('/',(request,response) => response.send('Hello'))
 
